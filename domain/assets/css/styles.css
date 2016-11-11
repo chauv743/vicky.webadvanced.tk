@@ -1,13 +1,126 @@
-#mac {
+@font-face {
+    font-family: 'akzidenz-grotesk_stdBdCn';
+    src: url('../fonts/akzidenzgroteskstd-boldcn-webfont.woff2') format('woff2'),
+         url('../fonts/akzidenzgroteskstd-boldcn-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  font-size: 39px;
+}
+
+#text {
+  font-family: 'akzidenz-grotesk_stdBdCn';
+  letter-spacing: 1px;
+}
+
+#description-wrapper {
   position: absolute;
-  /*top: 50%;*/
-  /*left: 50%;*/
-  -webkit-animation:spin 0.75s linear infinite;
-    -moz-animation:spin 0.75s linear infinite;
-    animation:spin 0.75s linear infinite;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
 }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#textbox {
+  position: absolute;
+  top: 10%;
+  left: 125%;
+  transform: translate(-50%, -50%);
 }
+
+/*#textbox-2 {
+  position: absolute;
+  top: 40%;
+  left: 99%;
+  transform: trans  late(-50%, -50%);
+}*/
+
+
+#circle {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 999;
+}
+
+.loading-dots {
+  /*display: none;*/
+  font-size: 50px;
+  position: absolute;
+  top: 65%;
+  left: 47%;
+}
+
+.loading-dots span {
+  font-size: 100px;
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+#mac {
+  /*display: none;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/*#mac-page {
+background-color: white;
+background-image:
+linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+background-size:60px 60px;
+background-position:0 0, 30px 30px;
+animation-name: black;
+animation-duration: 1.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes black {
+    to {
+    background-color: black;
+    background-image:
+    linear-gradient(45deg, white 25%, transparent 25%, transparent 75%, white 75%, white),
+    linear-gradient(45deg, white 25%, transparent 25%, transparent 75%, white 75%, white);
+  }
+
+}*/
+
+
+#mac-page-2 {
+  background-color: pink;
+}
+
+#mac-body-3 {
+  background-color: pink;
 }
